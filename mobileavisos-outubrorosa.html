@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI UPA BARRA DE JANGADA</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        /* Seu CSS aqui */
+        #mouse-follower {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 60%;
+            pointer-events: none;
+            transition: transform 0.1s ease;
+            z-index: 1000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #ca759e, #ecd0de, #e7ccda);
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        /* Estilo do quadrado branco */
+        .container-custom {
+            background-color: #d3649b;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Estilo das imagens */
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        /* Cor personalizada para o cabeçalho */
+        .custom-header {
+            background-color: #ffffff; /* Cor de fundo branca */
+        }
+
+        /* Estilo do dropdown */
+        .dropdown-menu {
+            background-color: white; /* Fundo branco para o dropdown */
+            border-radius: 0.5rem; /* Bordas arredondadas */
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: black; /* Define a cor preta para os textos */
+        }
+
+        /* Cor do texto quando o item do dropdown é focado ou está com o mouse sobre ele */
+        .dropdown-menu .dropdown-item:hover,
+        .dropdown-menu .dropdown-item:focus {
+            color: black; /* Texto preto */
+            background-color: #f0f0f0; /* Cor de fundo leve para destacar */
+        }
+        
+        /* Cor dos links do cabeçalho */
+        .navbar-nav .nav-link {
+            color: rgb(0, 0, 0); /* Texto preto para os links */
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="mouse-follower"></div>
+
+    <script>
+        document.addEventListener('mousemove', function (e) {
+            const follower = document.getElementById('mouse-follower');
+            const mouseX = e.pageX - 10;
+            const mouseY = e.pageY - 10;
+
+            follower.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        });
+    </script>
+
+    <img src="imagens/WIKIUPABJIMAGE.01.jpg" class="img-fluid" alt="WIKI UPA BARRA DE JANGADA">
+
+    <header class="bg py-3">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">OUTUBRO ROSA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="mobile-principal.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mobile-domcampelo.html">Dom Campelo</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="mobile-informativos.html">Informativos</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="ramaisDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Ramais
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="ramaisDropdown">
+                            <a class="dropdown-item" href="#">Administração - 3184-4516</a>
+                            <a class="dropdown-item" href="#">Almoxarifado - 3184-4512</a>
+                            <a class="dropdown-item" href="#">Classificação 04 - 3184-4497</a>
+                            <a class="dropdown-item" href="#">Classificação 05 - 3184-4498</a>
+                            <a class="dropdown-item" href="#">Consultório 01 - 3184-4503</a>
+                            <a class="dropdown-item" href="#">Consultório 04 - 3184-4513</a>
+                            <a class="dropdown-item" href="#">Consultório 05 - 3184-4514</a>
+                            <a class="dropdown-item" href="#">Consultório 06 - 3184-4494</a>
+                            <a class="dropdown-item" href="#">Coordenação Geral - 3184-4493</a>
+                            <a class="dropdown-item" href="#">Coleta - 3184-4505</a>
+                            <a class="dropdown-item" href="#">CPD/TI - 3184-4515</a>
+                            <a class="dropdown-item" href="#">Farmácia - 3184-4506</a>
+                            <a class="dropdown-item" href="#">Nutrição - 3184-4511</a>
+                            <a class="dropdown-item" href="#">Raio X - 3184-4507</a>
+                            <a class="dropdown-item" href="#">Recepção - 3184-4495</a>
+                            <a class="dropdown-item" href="#">RH - 3184-4501</a>
+                            <a class="dropdown-item" href="#">Sala Amarela Adulto - 3184-4509</a>
+                            <a class="dropdown-item" href="#">Sala Amarela Pediátrica - 3184-4508</a>
+                            <a class="dropdown-item" href="#">Sala Vermelha - 3184-4510</a>
+                            <a class="dropdown-item" href="#">Serviço Social - 3184-4496</a>
+                                <!-- Mais ramais aqui -->
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="educacaoDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Educação / CCIH
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="educacaoDropdown">
+                                <a class="dropdown-item" href="mobile-outobrorosa.html">Outubro 2024</a>
+                                <a class="dropdown-item" href="mobile-ccihsetembro.html">Setembro 2024</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="https://ismep.org.br">ISMEP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSck4DnA9SVSc9XCpupuNX4Kdcxcds8IXLr3j3pGTvcg0HlZWg/viewform">Central de Denúncias</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-6">
+                <a href="setembroamarelo.html">
+                    <img src="imagens/OUTUBROROSA (3).jpeg" class="img-fluid" alt="Outubro Rosa">
+                </a>
+            </div>
+            <div class="col-md-6">
+                <p class="text-justify">
+                    Outubro Rosa é um movimento internacional de conscientização para o controle do câncer de mama, criado no início da década de 1990 pela Fundação Susan G. Komen for the Cure. A data, celebrada anualmente, tem o objetivo de compartilhar informações e promover a conscientização sobre a doença; proporcionar maior acesso aos serviços de diagnóstico e de tratamento e contribuir para a redução da mortalidade. Desde 2020, com a pandemia COVID-19, os grupos que atuam em câncer de mama tiveram que repensar suas campanhas do Outubro Rosa e aumentar sua presença virtual. Por meio de intervenções, campanhas e mensagens inovadoras, eles mostraram que a promoção da saúde pública pode assumir várias formas e gerar um forte impacto no acesso à saúde. Qual a melhor forma de adaptar uma campanha? Por que a parceria com outros grupos pode aumentar o alcance das mensagens compartilhadas? Como avaliar o impacto de uma campanha virtual? Para tentar responder essas questões, em 21/9/2021, a Union for International Cancer Control (UICC) compartilhou estudos de caso de diferentes grupos e regiões para inspirar ideias e compartilhar lições aprendidas nas campanhas de 2020 para aproveitar ao máximo a campanha do Mês de Conscientização do Câncer de Mama deste ano. No Brasil, em 2018, a Lei nº 13.733 instituiu o Mês de conscientização sobre o câncer de mama – outubro rosa, período em que devem ser desenvolvidas as seguintes atividades, entre outras: I – iluminação de prédios públicos com luzes de cor rosa; II – promoção de palestras, eventos e atividades educativas; III – veiculação de campanhas de mídia e disponibilização à população de informações em banners, em folders e em outros materiais ilustrativos e exemplificativos sobre a prevenção ao câncer, que contemplem a generalidade do tema.
+                </p>
+            </div>
+        </div>
+        <div class="text-center mt-4">
+            <img src="imagens/outubrorosaIMG/avisooutubrorosadia06.png" class="img-fluid" alt="Aviso Outubro Rosa">
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,285 @@
+
+/* Cabeçalho */
+header {
+  background-color: #f8e006;
+  color: white;
+  padding: 10px; /* Adicione um pouco de espaçamento */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content:  flex-start; /* Centraliza horizontalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Contêiner do Cabeçalho */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre imagem e texto */
+}
+
+/* Imagem no Cabeçalho */
+.header-logo {
+  max-height: 50px; /* Altura máxima */
+  width: auto; /* Proporção mantida */
+}
+
+/* Texto do Cabeçalho */
+.header-title {
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin: 0; /* Remove margens extras */
+}
+
+
+
+/* Menu de Navegação Fixo na Lateral Esquerda */
+nav {
+  background: rgb(226, 205, 14);
+  color: rgb(0, 0, 0);
+  position: fixed;
+  top: 4rem; /* Altura do cabeçalho */
+  width: 250px;
+  height: 90%;
+  display: flexbox;
+  justify-content: space-between; /* Para empurrar o calendário para o final */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  font-weight: bold; /* Deixar o texto em negrito */
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #dbcf1f;
+}
+
+
+main {
+  text-align: center;
+  margin-left: 250px; /* Espaço para o menu lateral */
+  padding: 2rem; /* Espaçamento interno */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 20%, rgb(216, 185, 7) 70%);
+  min-height: 100vh; /* Garantir altura mínima da página */
+  overflow: hidden; /* Prevenir vazamento de elementos */
+}
+
+
+@media (max-width: 768px) {
+  main {
+    margin-left: 0; /* Remover espaço do menu em telas pequenas */
+    padding: 1rem; /* Reduzir espaçamento */
+  }
+
+  .quadrado-branco {
+    width: 100%; /* Ocupa toda a largura */
+    margin: 0 auto; /* Centralizar */
+    padding: 1rem; /* Espaçamento interno menor */
+  }
+}
+
+
+
+html, body {
+  height: auto;
+  margin: 0; /* Remove qualquer margem padrão */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(216, 185, 7) 70%);
+  padding: 0;
+  height:auto;
+  padding: 0;
+  max-width: 1920px; /* Limita a largura máxima da página */
+ 
+}  
+  /* Container do Calendário */
+  .calendar-container {
+    margin: 1.5rem;
+    text-align: center;
+  }
+  
+  .calendar-container label {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .calendar-container input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+  
+  .quadrado-branco{
+  
+    width: 1300px; /* Largura do quadrado */
+    height: 3600px; /* Altura do quadrado */
+    background-color: white; /* Cor de fundo do quadrado */
+    border: 8px solid rgba(0, 0, 0, 0.966); /* Opcional: borda para o quadrado */
+    max-width: 100%; /* Para evitar ultrapassar o container */
+    width: 100%; /* Ajustar ao tamanho do main */
+    margin: 0 auto; /* Centralizar no main */
+    padding: 2rem; /* Adicionar espaçamento interno */
+    box-sizing: border-box; /* Incluir borda e padding no cálculo do tamanho */
+    
+  }
+    
+
+  
+  .quadrado-branco img {
+
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%; /* Respeitar largura do container */
+    height: auto; /* Preservar proporção */
+  }
+  
+  .logo16 {
+  
+  margin-top: auto;
+  margin-left: auto;
+  align-items: center;
+  width: 350px; /* Ajuste para o tamanho desejado */
+  height: 150px; /* Mantém a proporção da imagem */
+  
+  }
+  
+  .logo5{
+  
+    margin-top: auto;
+    margin-left: auto;
+  
+  }
+  
+  .logo10{
+  
+    margin-top: auto;
+    margin-left: auto;
+  
+  }
+  
+  .logo12{
+  
+    margin-top: auto;
+    margin-left: auto;
+  
+  }
+  
+  .logo13{
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  .logo15{
+    
+    margin-top: auto;
+    margin-left: auto;
+  }
+  
+  
+  .item {
+  align-items: center;
+  gap: 20px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  
+  
+  .texto-correspondente {
+  flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+  }
+  
+  .texto-correspondente h3 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: #333;
+  }
+  
+  .texto-correspondente p {
+  margin: 0.5rem 0 0 0;
+  color: #666;
+  }
+  
+  @media (max-width: 768px) {
+  .conteudo {
+    flex-direction: column; /* Empilha os itens verticalmente */
+    align-items: center;
+  }
+  
+  .quadrado-branco {
+    width: 100%; /* Ocupa 100% da largura em telas pequenas */
+  }
+  
+  .logo-container {
+    width: 100%;
+    margin-top: 20px; /* Espaçamento acima da logo */
+  }
+  
+  .logo {
+    max-width: 150px; /* Reduz o tamanho da logo em telas menores */
+  }
+  }
+  
+  .dropdown-title {
+  cursor: pointer;
+  padding: 5px;
+  color: rgb(0, 0, 0);
+  font-size: 18px;
+  transition: color 0.5s ease;
+  }
+  
+  .dropdown-title:hover {
+    color: #000000;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ceba0c;
+    min-width: 160px;
+    max-height: 300px; /* Definindo uma altura máxima */
+    overflow-y: auto; /* Adiciona uma barra de rolagem se o conteúdo ultrapassar a altura máxima */
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.781);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #b39511;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  .highlight {
+    font-weight: bold; /* Deixar o texto em negrito */
+    font-size: 14px; /* Aumentar o tamanho da fonte */
+    color: #ff0000; /* Mudar a cor do texto para vermelho */
+    text-decoration: underline; /* Adicionar sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+  }
+  
+  .highlight:hover {
+    color: #ff4d4d; /* Cor ao passar o mouse */
+  }
+  
+  

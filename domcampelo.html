@@ -1,0 +1,213 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dom Campelo</title>
+  <link rel="stylesheet" href="style-domcampelo.css">
+  <style>
+    /* Adicionando estilo para redirecionar o dropdown e adicionar rolagem */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 100%; /* Faz o dropdown aparecer à direita */
+      top: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      max-height: 200px; /* Limita a altura máxima para exibir a rolagem */
+      overflow-y: auto;  /* Habilita a rolagem vertical */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block; /* Exibe o dropdown ao passar o mouse */
+    }
+
+    .dropdown-title {
+      cursor: pointer;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      
+    }
+
+    .header-logo {
+      height: 80px;
+    }
+
+    .header-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      color: white;
+    }
+
+    .header-center {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .header-center h2 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    .header-center h1 {
+      margin: 0;
+      font-size: 24px;
+      color: rgb(255, 251, 0);
+    }
+
+    #countdown {
+      font-size: 20px;
+      font-weight: bold;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="imagens/DezembroVermelho/LOGO.png" alt="Logo" class="header-logo">
+      <h1 class="header-title">WIKI UPA BJ ﾠ|</h1>
+
+      <div class="header-center">
+        <h2>Faltam</h2>
+        <div id="countdown">Carregando...</div>
+        <h2>Para</h2>
+        <h1>2025</h1>
+      </div>
+    </div>
+    <script src="countdown.js"></script>
+  </header>
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="principal.html">Home</a></li>
+        <li><a href="domcampelo.html">Dom Campelo</a></li>
+        <li><a href="informativos.html">Informativos</a></li>
+        
+        <!-- Adicionando o dropdown de Ramais com rolagem -->
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Ramais &#x25BC;</span></a>
+          <div class="dropdown-content">
+                            <a href="#">Administração - 3184-4516</a>
+                            <a href="#">Almoxarifado - 3184-4512</a>
+                            <a href="#">Classificação 04 - 3184-4497</a></a>
+                            <a href="#">Classificação 05 - 3184-4498</a>
+                            <a href="#">Consultório 01 - 3184-4503</a>
+                            <a href="#">Consultório 04 - 3184-4513</a>
+                            <a href="#">Consultório 05 - 3184-4514</a>
+                            <a href="#">Consultório  06 - 3184-4494</a>
+                            <a href="#">Coordenação Geral - 3184-4493</a>
+                            <a href="#">Coleta - 3184-4505</a>
+                            <a href="#">CPD/TI - 3184-4515</a>
+                            <a href="#">Farmácia - 3184-4506</a>
+                            <a href="#">Nutrição - 3184-4511</a>
+                            <a href="#">Raio X - 3184-4507</a>
+                            <a href="#">Recepção - 3184-4495</a>
+                            <a href="#">RH - 3184-4501</a>
+                            <a href="#">Sala Amarela Adulto - 3184-4509</a>
+                            <a href="#">Sala Amarela Pediátrica - 3184-4508</a>
+                            <a href="#">Sala Vermelha - 3184-4510</a>
+                            <a href="#">Serviço Social - 3184-4496</a>
+          </div>
+        </li>
+
+        <!-- Adicionando o dropdown de Educação / CCIH -->
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Educação / CCIH &#x25BC;</span></a>
+          <div class="dropdown-content">
+
+            <a href="dezembrvermelho.html">Dezembro 2024</a>
+            <a href="novembroazul.html">Novembro 2024</a>
+            <a href="outubrorosa.html">Outubro 2024</a>
+            <a href="CCIHsetembro.html">Setembro 2024</a>
+          </div>
+        </li>
+
+        <li><a href="https://ismep.org.br">ISMEP</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSck4DnA9SVSc9XCpupuNX4Kdcxcds8IXLr3j3pGTvcg0HlZWg/viewform">Central de Denúncias</a></li>
+        <li><a href="https://classroom.google.com/c/Njg2OTcyNzc0OTUw?cjc=rzfd4lq">TREINAMENTO</a></li>
+      
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Tutoriais &#x25BC;</span></a>
+          <div class="dropdown-content">
+
+            <a href="enfermagem.html">Enfermagem</a>
+           
+          </div>
+
+      
+      </ul>
+
+    
+    </nav>
+
+    <main>
+      <h2>Bem-vindo(a) A página dedicada ao nosso Fundador Dom Campelo</h2>
+
+
+    
+
+
+      <div class="quadrado-branco">
+        <div class="item">
+          <!-- Imagem à esquerda -->
+          <a href="https://ismep.org.br/wp-content/uploads/2021/06/Livro-Cartas-de-Dom-Campelo_reduce.pdf"><div class="logo1"><img src="imagens/livro Dom Campelo.jpeg"  width="270" height="600"></div></a>
+          
+          
+          <!-- Texto -->
+          <div class="texto-correspondente">
+            <h3>Um Pouco Sobre Nosso Fundador</h3>
+            <p>A publicação revisita a vida e obra do 4º Bispo Diocesano de Petrolina e suas Cartas Circulares escritas entre os anos de 1964 até 1987.
+
+                Dom Antônio Campelo de Aragão (1904-1988) tem sua vida e obra religiosa revisitada no livro “Cartas Circulares: a espiritualidade das Medianeiras da Paz que emana das Circulares do Fundador”. A publicação de autoria da Irmã Maria Auxiliadora Menezes é um profundo estudo científico e teológico sobre cada uma das cartas circulares escritas por Dom Campelo de Aragão às duas congregações religiosas por ele fundadas, contextualizando-as dentro da conjuntura social, política e religiosa da diocese, do Brasil e do mundo.
+                
+                Publicado em formato digital (e-book), o livro analisa as 27 Cartas Circulares escritas entre os anos de 1964 a 1987 pelo religioso que fundou duas congregações religiosas: as Mensageiras de Santa Maria em 1957 e as Medianeiras da Paz em 1968. Ordenado como Sacerdote em 1936 em Turim, na Itália, retornou ao Brasil onde entre anos de 1937 até 1950 levou suas ações religiosas em cidades como Salvador – BA, Cajazeiras – PB, Aracaju – SE e Fortaleza – CE. Em maio de 1950 foi nomeado pelo Papa Pio XII como Bispo Auxiliar para a Arquidiocese de Cuiabá – MT, sendo sagrado Bispo em agosto do mesmo ano. Em dezembro de 1956 é designado para exercer a função de Bispo Diocesano de Petrolina – PE onde assumiu com ardoroso zelo o seu pastoreiro de fevereiro de 1957 a fevereiro de 1975.
+                
+                Sua trajetória religiosa como Bispo diocesano é assumida em fidelidade ao seu lema episcopal: “Tudo farei pelos eleitos” – “Tudo sofrer pelas almas que Deus nos confiar”. Este lema vem expresso quinze vezes nas suas circulares, em tom de uma explosão de ardor missionário e de amor à Igreja.
+                
+                A autora do livro Cartas Circulares: a espiritualidade das Medianeiras da Paz que emana das Circulares do Fundador, Irmã Maria Auxiliadora Menezes afirma que “o lema “tudo farei pelos eleitos”, foi retomado, analisado e acolhido com afeto e com amor, como se tivesse preso em mãos um diamante, o tivesse burilado, descoberto o seu real valor, contemplasse a sua beleza e o acolhesse como precioso tesouro”.</p>
+          </div>
+        </div>
+        
+        
+        <!-- Imagem abaixo do texto -->
+        <div class="imagem-direita-container">
+          <img src="imagens/fotosDomcampelo.png" alt="Imagem Direita" class="imagem-direita">
+        </div>
+      </div>
+
+
+      
+    </main>
+  </div>
+
+ 
+</body>
+</html>

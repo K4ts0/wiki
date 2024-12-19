@@ -1,0 +1,462 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f9;
+  color: #000000;
+  overflow-x: hidden; /* Remove rolagem horizontal */
+  max-width: 100vw; /* Garante que a largura do conteúdo não ultrapasse a tela */
+}
+
+/* Cabeçalho */
+header {
+  background-color: #b30a8e;
+  color: white;
+  padding: 10px; /* Adicione um pouco de espaçamento */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: flex-start; /* Centraliza horizontalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Contêiner do Cabeçalho */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre imagem e texto */
+}
+
+/* Imagem no Cabeçalho */
+.header-logo {
+  max-height: 50px; /* Altura máxima */
+  width: auto; /* Proporção mantida */
+}
+
+/* Texto do Cabeçalho */
+.header-title {
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin: 0; /* Remove margens extras */
+}
+/* Menu de Navegação Fixo na Lateral Esquerda */
+nav {
+  background: #b812be;
+  color: rgb(255, 255, 255);
+  position: fixed;
+  top: 4rem; /* Altura do cabeçalho */
+  width: 250px;
+  height: 90%;
+  display: flexbox;
+  justify-content: space-between; /* Para empurrar o calendário para o final */
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 20px;
+}
+
+nav ul li {
+  margin: 1rem 0;
+}
+
+nav ul li a {
+  font-weight: bold; /* Deixar o texto em negrito */
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #c510bc;
+}
+
+/* Conteúdo Principal */
+main {
+  margin-left: 250px; /* Alinhado à direita do menu */
+  padding: 2rem;
+  padding-top: 6rem; /* Espaço para o cabeçalho */
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 20%, rgb(173, 7, 151) 70%);
+  
+}
+
+/* Botão Interativo */
+button.interactive-button {
+  padding: 0.75rem 1.5rem;
+  background-color: #ac1b88;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button.interactive-button:hover {
+  background-color: #b80da9;
+}
+
+button.interactive-button:active {
+  background-color: #bd0fb4;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  nav {
+    width: 100%;
+    height: auto;
+    position: relative;
+    top: 0;
+  }
+
+  main {
+    margin-left: 0;
+    padding: 1rem;
+  }
+
+  footer {
+    position: static;
+  }
+}
+
+/* Footer */
+footer {
+  font-weight: bold; /* Deixar o texto em negrito */
+  background-color: #000000;
+  color: white;
+  text-align: center;
+  height: 40px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Ajustes no HTML e BODY */
+html, body {
+  margin: 0; /* Remove qualquer margem padrão */
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(173, 7, 104) 70%);
+  padding: 0;
+  max-width: 100vw; /* Impede que o conteúdo ultrapasse a tela */
+  height: 100vh; /* Garante que a altura da tela não ultrapasse a tela */
+  overflow-x: hidden; /* Evita rolagem horizontal */
+  overflow-y: auto; /* Permite rolagem vertical normal */
+}
+
+/* Container do Calendário */
+.calendar-container {
+  margin: 1.5rem;
+  text-align: center;
+}
+
+.calendar-container label {
+  color: rgb(0, 0, 0);
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.calendar-container input {
+  padding: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+.quadrado-branco{
+
+  width: 1290px; /* Largura do quadrado */
+  height: 30400px; /* Altura do quadrado */
+  background-color: white; /* Cor de fundo do quadrado */
+  border: 8px solid rgba(0, 0, 0, 0.966); /* Opcional: borda para o quadrado */
+  text-align: center;
+  max-width: 100%; /* Para evitar ultrapassar o container */
+  width: 100%; /* Ajustar ao tamanho do main */
+  margin: 0 auto; /* Centralizar no main */
+  padding: 2rem; /* Adicionar espaçamento interno */
+  box-sizing: border-box; /* Incluir borda e padding no cálculo do tamanho */
+
+
+}
+
+.quadrado-branco img {
+  
+  margin-top: 50px;
+  margin-left: auto;
+  width: 900px; /* Deixa a largura das imagens internas no tamanho original */
+  height: auto; /* Mantém a proporção das imagens */
+
+}
+
+.quadrado-branco img {
+    
+  margin-top: auto;
+  margin-left: auto;
+  width: auto; /* Deixa a largura das imagens internas no tamanho original */
+  max-width: 100%; /* Isso garante que não ultrapassem o tamanho do contêiner */
+  height: 700px; /* Mantém a proporção das imagens */
+
+}
+
+.quadrado-branco video {
+  margin: 0 auto; /* Centraliza o vídeo dentro do container */
+}
+
+
+.logo16 {
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+
+
+
+.logo17 {
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+
+.logo18{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo19{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+  
+}
+
+.logo20{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+ 
+
+}
+
+.logo21{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo22{
+
+  margin-top: 10px;
+  margin-left: 40px;
+  margin-right: 80px;
+
+}
+
+.logo23{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo24{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo25{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo26{
+
+  
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo27{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+.logo28{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+.logo29{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+
+.logo30{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo31{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo32{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo33{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo34{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+.logo35{
+
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+}
+
+.logo36{
+  margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 60px;
+
+}
+
+
+.item {
+align-items: center;
+gap: 20px; /* Espaçamento entre a imagem e o texto */
+}
+
+
+
+.texto-correspondente {
+flex-grow: 1; /* Faz o texto ocupar o espaço restante */
+}
+
+.texto-correspondente h3 {
+margin: 0;
+font-size: 1.5rem;
+color: #333;
+}
+
+.texto-correspondente p {
+margin: 0.5rem 0 0 0;
+color: #666;
+}
+
+@media (max-width: 768px) {
+.conteudo {
+  flex-direction: column; /* Empilha os itens verticalmente */
+  align-items: center;
+}
+
+.quadrado-branco {
+  width: 100%; /* Ocupa 100% da largura em telas pequenas */
+}
+
+.logo-container {
+  width: 100%;
+  margin-top: 20px; /* Espaçamento acima da logo */
+}
+
+.logo {
+  max-width: 150px; /* Reduz o tamanho da logo em telas menores */
+}
+}
+
+.dropdown-title {
+cursor: pointer;
+padding: 5px;
+color: rgb(255, 255, 255);
+font-size: 18px;
+transition: color 0.5s ease;
+}
+
+.dropdown-title:hover {
+color: #ece8e8;
+}
+
+.dropdown-content {
+display: none;
+position: absolute;
+background-color: #c20eb3;
+min-width: 160px;
+max-height: 300px; /* Definindo uma altura máxima */
+overflow-y: auto; /* Adiciona uma barra de rolagem se o conteúdo ultrapassar a altura máxima */
+box-shadow: 0px 8px 16px rgba(86, 2, 97, 0.781);
+z-index: 1;
+}
+
+.dropdown-content a {
+color: black;
+padding: 12px 16px;
+text-decoration: none;
+display: block;
+}
+
+.dropdown-content a:hover {
+background-color: #a70a9f;
+}
+
+.dropdown:hover .dropdown-content {
+display: block;
+}
+
+.highlight {
+font-weight: bold; /* Deixar o texto em negrito */
+font-size: 14px; /* Aumentar o tamanho da fonte */
+color: #ff00d4; /* Mudar a cor do texto para vermelho */
+text-decoration: underline; /* Adicionar sublinhado */
+transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.highlight:hover {
+color: #b812aa; /* Cor ao passar o mouse */
+}
+

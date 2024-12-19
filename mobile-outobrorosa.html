@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI UPA BARRA DE JANGADA</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #fff, #bd468f, #8b008b);
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+        .container-custom {
+            background-color: rgb(235, 167, 235);
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+        .image-container {
+            text-align: center; /* Centraliza as imagens */
+        }
+        .image-container img {
+            margin-left: auto;
+            margin-right: auto;
+            display: block;
+            width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-bottom: 15px;
+        }
+        .video-container {
+            margin: 20px 0;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        .video-container video {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+            border-radius: 8px;
+        }
+        h1 {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.2rem;
+            }
+        }
+
+        #mouse-follower {
+            position: absolute;
+            width: 25px;
+            height: 25px;
+            background-color: rgba(0, 0, 0, 0.5);
+            border-radius: 60%;
+            pointer-events: none;
+            transition: transform 0.1s ease;
+            z-index: 1000;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to bottom, #d3649b, #ecd0de, #7e0843);
+        }
+        .header-image {
+            width: 100%;
+            height: auto;
+        }
+
+        .container-custom {
+            background-color: #cf5793;
+            border-radius: 10px;
+            padding: 20px;
+            margin-top: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 10px 0;
+        }
+
+        .custom-header {
+            background-color: #ffffff;
+        }
+
+        .dropdown-menu {
+            background-color: white;
+            border-radius: 0.5rem;
+        }
+
+        .dropdown-menu .dropdown-item {
+            color: black;
+        }
+
+        .dropdown-menu .dropdown-item:hover,
+        .dropdown-menu .dropdown-item:focus {
+            color: black;
+            background-color: #f0f0f0;
+        }
+
+        .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="imagens/DezembroVermelho/LOGO.png" class="img-fluid" alt="WIKI UPA BARRA DE JANGADA">
+    
+        <header class="bg-purple py-3">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg navbar-dark">
+                <div class="container">
+                    <a class="navbar-brand" href="#">OUTUBRO ROSA</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="mobile-principal.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mobile-domcampelo.html">Dom Campelo</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="mobile-informativos.html">Informativos</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Ramais
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <a class="dropdown-item" href="#">Administração - 3184-4516</a>
+                                    <!-- outros itens... -->
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Educação / CCIH
+                                </a>
+                                <ul class="dropdown-menu">
+
+                                    <li><a class="dropdown-item" href="mobile-dezembro.html">Dezembro 2024</a></li>
+                                    <li><a class="dropdown-item" href="mobile-novembro.html">Novembro 2024</a></li>
+                                    <li><a class="dropdown-item" href="mobile-outobrorosa.html">Outubro 2024</a></li>
+                                    <li><a class="dropdown-item" href="mobile-ccihsetembro.html">Setembro 2024</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="https://ismep.org.br">ISMEP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link highlight" href="https://docs.google.com/forms/d/e/1FAIpQLSck4DnA9SVSc9XCpupuNX4Kdcxcds8IXLr3j3pGTvcg0HlZWg/viewform">Central de Denúncias</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="container container-custom">
+                <div class="container container-custom">
+
+                    <div style="margin-top: 50px;"></div>
+                    <h1> Treinamento- Atendimento inicial ao trauma / Dia 30 </h1>
+          
+                    <div class="logo36">
+                     <div class="image-container"><a href="#"><img src="imagens/outubrorosaIMG/atendimentoinicialtrauma.png" class="hover-effect" width="270" height="200"></a></div></div>
+          
+          
+          
+                    <div style="margin-top: 50px;"></div>
+                    <h1> Inauguração da nossa Brinquedoteca : Irmã Eufrasio e Distribuição de brinquedos arrecadados para o dia das Crianças de nossa Unidade / Dia 30 </h1>
+          
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/imagemdia30 (5).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/imagemdia30 (6).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/imagemdia30 (8).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/imagemdia30 (7).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/videodia30 (9).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/videosdia30 (3).mp4" type="video/mp4">
+                    </video>
+                 
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/videosdia30 (2).mp4" type="video/mp4">
+                    </video>
+          
+                    <div class="video-container">
+                        <video controls>
+                     <source src="vídeos/videosdia30 (1).mp4" type="video/mp4">
+                    </video>
+          
+                     <div class="logo31">
+                         <div class="image-container"><a href="#"><img src="imagens/outubrorosaIMG/imagemdia30.png" class="hover-effect" width="270" height="200"></a></div></div>
+          
+          
+                         <div class="logo32">
+                             <div class="image-container"><a href="#"><img src="imagens/outubrorosaIMG/imagemdia30(3).png" class="hover-effect" width="270" height="100"></a></div></div>
+             
+                         
+                         <div class="logo33">
+                             <div class="image-container"><a href="#"><img src="imagens/outubrorosaIMG/imagemdia30(2).png" class="hover-effect" width="270" height="100"></a></div></div>
+                 
+          
+          
+          
+          
+                     <div style="margin-top: 50px;"></div>
+                             <h1> Aniversariantes do mês de outubro </h1>
+          
+                      <div class="logo35">
+                     <div class="image-container"><a href="#"><img src="imagens/aniversariantedia30.png" class="hover-effect" width="270" height="100"></a></div></div>
+                     
+          
+          
+          
+                             
+                     <div style="margin-top: 50px;"></div>
+                     <h1>Fechamento do outubro Rosa- Palestrante Dra.Carla</h1>
+          
+                     <div class="video-container">
+                        <video controls>
+                         <source src="vídeos/videodia30 (11).mp4" type="video/mp4">
+                        </video>
+          
+          
+                        <div class="video-container">
+                            <video controls>
+                         <source src="vídeos/videodia30 (10).mp4" type="video/mp4">
+                        </video>
+          
+          
+                     <div class="logo34">
+                         <div class="image-container"><a href="#"><img src="imagens/outubrorosaIMG/imagemdia30cancer.png" class="hover-effect" width="270" height="200"></a></div></div>
+        
+    
+                 <h1> HÁBITOS SAUDÁVEIS E A PREVENÇÃO DO CÂNCER DE MAMA - FACILITADORA : NUTRICIONISTA DEISE / Dia 23 & 24 </h1>
+
+
+                    <div class="video-container">
+                        <video controls>
+                            <source src="vídeos/habitossaudaveisdia24.mp4" type="video/mp4">
+                        </video>
+
+                    <div class="image-container">
+                        <img src="imagens/outubrorosaIMG/habitossaudaveisdia24.png" alt="Imagem de treinamento">
+                    </div> 
+
+                    <div class="video-container">
+                        <video controls>
+                            <source src="vídeos/habitossaudaveisdia23.mp4" type="video/mp4">
+                        </video>
+                    
+                    <div class="image-container">
+                        <img src="imagens/outubrorosaIMG/habitossaudaveisdia23.png" alt="Imagem de treinamento">
+                    </div> 
+
+        
+                    <h1> A META 3 / Dia 21 & 22 De Outubro </h1>
+        
+                    <h1> Visa  melhorar a segurança na prescrição, uso e administração de medicamentos. 
+                        Medicamentos de Alta Vigilância (MAV) 
+                        são aqueles que apresentam um maior risco 
+                        de provocar danos aos pacientes e exigem medidas especiais de segurança - CCIH</h1>
+        
+                        <div class="video-container">
+                            <video controls>
+                                <source src="vídeos/meta3.dia-21-22.mp4" type="video/mp4">
+                            </video>
+        
+                        <div class="image-container">
+                            <img src="imagens/outubrorosaIMG/meta3.02.png" alt="Imagem de treinamento">
+                        </div> 
+        
+                        <div class="image-container">
+                            <img src="imagens/outubrorosaIMG/meta3.01.png" alt="Imagem de treinamento">
+                        </div> 
+        
+        
+                    <h1> Câncer de mama- Alerta sobre prevenção e diagnóstico / Dia 21 </h1>
+        
+                    <div class="image-container">
+                        <img src="imagens/outubrorosaIMG/cancerdemama.png" alt="Imagem de treinamento">
+                    </div> 
+        
+        
+                <h1> 18 de outubro dia do médico / 13 de outubro dia do fisioterapeuta </h1>
+        
+                <div class="image-container">
+                    <img src="imagens/outubrorosaIMG/medico&fisioterapeuta.png" alt="Imagem de treinamento">
+                </div> 
+        
+                <h1> Guia de orientação - Ginástica laboral 
+                    (Facilitadora : Fisioterapeuta Cláudia & Larissa) / Dia 15 & 16</h1>
+                
+                
+                    <div class="video-container">
+                        <video controls>
+                            <source src="vídeos/videodia15 (1).mp4" type="video/mp4">
+                        </video>
+                
+                        <div class="video-container">
+                            <video controls>
+                                <source src="vídeos/videodia15 (2).mp4" type="video/mp4">
+                            </video>
+        
+                        <div class="video-container">
+                            <video controls>
+                                    <source src="vídeos/videodia15 (3).mp4" type="video/mp4">
+                            </video>
+                
+        
+                    <div class="image-container">
+                    <img src="imagens/outubrorosaIMG/imagemdia15_2.png" alt="Imagem de treinamento">
+                </div> 
+                
+                <div class="image-container">
+                    <img src="imagens/outubrorosaIMG/imagemdia15.png" alt="Imagem de treinamento">
+                </div>
+        
+        
+        
+                <h1>Treinamento de Manobras de Desengasgo / Dia 11</h1>
+                <div class="image-container">
+        
+                 <div class="video-container">
+                    <video controls>
+                        <source src="vídeos/videodia11.mp4" type="video/mp4">
+                    </video>
+        
+                    <img src="imagens/outubrorosaIMG/imagemdia11.png" alt="Imagem de treinamento">
+                </div>
+        
+        
+        
+                <h1>Treinamento de Bomba de Infusão / Dia 07</h1>
+                <div class="image-container">
+                    <img src="imagens/outubrorosaIMG/outubroccih/ccih01.png" alt="Imagem de treinamento">
+                </div>
+        
+        
+        
+                <h1>Colaboradora destaque segurança do paciente - Referente mês setembro / Dia 07</h1>
+                <div class="image-container">
+                    <img src="imagens/outubrorosaIMG/outubroccih/ccih02.png" alt="Colaboradora destaque">
+                </div>
+        
+                <h1>Outubro Rosa / Dia 03</h1>
+                <div class="video-container">
+                    <video controls>
+                        <source src="vídeos/outobrorosa02.mp4" type="video/mp4">
+                    </video>
+        
+                    <div class="image-container">
+                        <img src="imagens/outubrorosaIMG/imgdia04.png" alt="Imagem Dia 04" class="hover-effect" style="width: 280px; height: 400; ">
+                    </div>
+                    
+                    <div class="image-container">
+                        <img src="imagens/outubrorosaIMG/imgnoite04.png" alt="Imagem Noite 04" class="hover-effect" style="width: 280px; height: 400;">
+                    </div>
+                
+                    <video controls>
+                        <source src="vídeos/outobrorosa03.mp4" type="video/mp4">
+                    </video>
+                </div>
+        
+                <h1>Outubro Rosa / Dia 01</h1>
+                <div class="image-container">
+                    <img src="imagens/outubro02.png" alt="Imagem Outubro Rosa">
+                </div>
+            </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

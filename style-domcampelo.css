@@ -1,0 +1,313 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #000000;
+  }
+  
+  
+
+  /* Cabeçalho */
+header {
+  background-color: rgb(104, 11, 42);
+  color: white;
+  padding: 10px; /* Adicione um pouco de espaçamento */
+  display: flex;
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: flex-start; /* Centraliza horizontalmente */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+/* Contêiner do Cabeçalho */
+.header-container {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Espaço entre imagem e texto */
+}
+
+/* Imagem no Cabeçalho */
+.header-logo {
+  max-height: 50px; /* Altura máxima */
+  width: auto; /* Proporção mantida */
+}
+
+/* Texto do Cabeçalho */
+.header-title {
+  font-size: 1.5rem; /* Tamanho do texto */
+  margin: 0; /* Remove margens extras */
+}
+
+  
+  /* Menu de Navegação Fixo na Lateral Esquerda */
+  nav {
+    background: rgb(143, 16, 58);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 4rem; /* Altura do cabeçalho */
+    width: 250px;
+    height: 90%;
+   
+    
+    display: flexbox;
+   
+    justify-content: space-between; /* Para empurrar o calendário para o final */
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    margin: 1rem 0;
+  }
+  
+  nav ul li a {
+    font-weight: bold; /* Deixar o texto em negrito */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c51080;
+  }
+  
+  /* Conteúdo Principal */
+  main {
+    margin-left: 250px; /* Alinhado à direita do menu */
+    padding: 2rem;
+    padding-top: 6rem; /* Espaço para o cabeçalho */
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 20%, rgb(104, 11, 42) 70%);
+   
+  }
+  
+  /* Botão Interativo */
+  button.interactive-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #ac1b75;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  button.interactive-button:hover {
+    background-color: #b80da9;
+  }
+  
+  button.interactive-button:active {
+    background-color: #bd0fb4;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+    }
+  
+    main {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  
+    footer {
+      position: static;
+    }
+  }
+  
+  /* Footer */
+  footer {
+    font-weight: bold; /* Deixar o texto em negrito */
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    height: 40px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+
+html, body {
+    margin: 0; /* Remove margens padrão */
+    padding: 0; /* Remove padding padrão */
+    height: 100%; /* Garante que o corpo ocupe 100% da altura da tela */
+    overflow-x: hidden; /* Remove a rolagem horizontal */
+    overflow-y: auto; /* Permite rolagem vertical normal */
+}
+
+img {
+    width: 100%;
+    max-width: 1920px;
+    height: auto;
+  }
+
+
+
+/* Container do Calendário */
+.calendar-container {
+    margin: 1.5rem;
+    text-align: center;
+  }
+  
+  .calendar-container label {
+    color: rgb(0, 0, 0);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .calendar-container input {
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+  }
+
+  .logo1{
+
+    width: 270px;
+    margin-top: 28px; /* Mover a imagem 20px para baixo */
+    float: left; /* Alinha as imagens à esquerda */
+    margin-right: 30px; /* Espaçamento entre as imagens */
+    margin-left: 20px;
+    max-width: 700px; /* Limita a largura das imagens */
+   
+  }
+
+
+  .quadrado-branco {
+    display: flex;
+    flex-direction: column;
+    gap: 20px; /* Espaçamento entre os elementos */
+    background-color: white;
+    border: 8px solid rgba(0, 0, 0, 0.966);
+    padding: 20px;
+    border-radius: 20px;
+    width: 90%;
+    margin: 20px auto; /* Centraliza horizontalmente */
+  }
+
+  .imagem-esquerda {
+    float: left;
+    width: 200px; /* Ajuste do tamanho */
+    height: auto; /* Mantém a proporção */
+    margin-right: 20px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  .imagem-direita {
+    display: block;
+    width: 100%;  /* Agora a imagem ocupará 100% da largura disponível no contêiner */
+    max-width: 1200px; /* Define um limite de 1200px para a largura máxima */
+    height: auto;  /* Mantém a proporção da imagem */
+    margin: 30px auto;  /* Centraliza a imagem com espaçamento superior e inferior */
+    border-radius: 10px; /* Bordas arredondadas */
+}
+
+.imagem-direita-container {
+    width: 100%;  /* O container ocupa 100% da largura disponível */
+    max-width: 1000px; /* Limita a largura do container, o que ajuda a controlar o tamanho da imagem */
+    margin: 0 auto;  /* Centraliza o container na página */
+    padding: 0 20px;  /* Adiciona espaçamento nas laterais do contêiner */
+    text-align: center; /* Centraliza a imagem dentro do contêiner */
+}
+
+  
+  .item {
+    display: flex;
+    align-items: flex-start; /* Alinha a imagem à esquerda com o topo do texto */
+    gap: 20px; /* Espaçamento entre a imagem e o texto */
+  }
+  
+  
+  .texto-correspondente {
+    flex-grow: 1;
+    text-align: justify;
+  }
+  
+
+
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    .item {
+      flex-direction: column; /* Empilha imagem e texto em telas pequenas */
+      align-items: center; /* Centraliza os itens no centro */
+    }
+  
+    .imagem-esquerda {
+      margin-bottom: 20px; /* Adiciona espaçamento entre a imagem e o texto */
+    }
+  
+    .imagem-direita-container {
+      margin-top: 20px; /* Adiciona espaço acima da imagem direita */
+    }
+  }
+  
+/* Adicionando o dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-title {
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: color 0.5s ease;
+}
+
+.dropdown-title:hover {
+    color: #221c1c;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: hsl(331, 82%, 22%);
+    min-width: 160px;
+    max-height: 300px; /* Definindo uma altura máxima */
+    overflow-y: auto; /* Adiciona uma barra de rolagem se o conteúdo ultrapassar a altura máxima */
+    box-shadow: 0px 8px 16px rgba(94, 4, 34, 0.781);
+    z-index: 1;
+}
+
+
+
+.dropdown-content a {
+    color: rgb(255, 255, 255);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #aa0b63;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.highlight {
+    font-weight: bold; /* Deixar o texto em negrito */
+    font-size: 14px; /* Aumentar o tamanho da fonte */
+    color: #921142; /* Mudar a cor do texto para vermelho */
+    text-decoration: underline; /* Adicionar sublinhado */
+    transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.highlight:hover {
+    color: #85132c; /* Cor ao passar o mouse */
+}
+

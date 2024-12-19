@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WIKI UPA BARRA DE JANGADA</title>
+    <link rel="stylesheet" href="style-inicial01.css">
+
+   <style>
+    /* Seu CSS aqui */
+    #mouse-follower {
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background-color: rgba(77, 75, 75, 0.5);
+        border-radius: 60%;
+        pointer-events: none;
+        transition: transform 0.1s ease;
+        z-index: 1000;
+    }
+</style>
+
+</head>
+<body>
+
+    <div id="mouse-follower"></div>
+
+    <script>
+        document.addEventListener('mousemove', function(e) {
+            const follower = document.getElementById('mouse-follower');
+            const mouseX = e.pageX - 10;
+            const mouseY = e.pageY - 10;
+            
+            follower.style.transform = `translate3d(${mouseX}px, ${mouseY}px, 0)`;
+        });
+    </script>
+
+    <img src="imagens/WIKIUPABJIMAGE.01.jpg" width="1349" height="200">
+    </div>
+    <header>
+         <div><background-color: #000000;></background-color:></div>  
+         <div class="container">
+            <div class="menu">
+                <div class="domcampelo">
+                    <div class="image-container">
+            
+                <nav>
+                    <ul>
+                    
+                    <a href="principal.html">Home</a>
+                    <a href="domcampelo.html">Dom Campelo</a>
+                    <a href="informativos.html">Informativos</a>
+                    <a href="ramais.html">Ramais</a>
+                    <a href="CCIH.html">Educação / CCIH</a>
+                    <a href="https://ismep.org.br">ISMEP</a>
+                    
+                    
+                    
+                </ul>
+              
+                </nav>
+            </div>
+            
+           
+            
+            <div>
+        </div>
+
+    </header>
+    <!--<p><div class="MURALDEAVISOS">MURAL DE AVISOS</div></p>-->
+    
+‎
+         
+         <div class="quadrado-branco">
+            
+            <div class="logo3">    
+                <div class="image-container"><a href="domcampelo.html"><img src="imagens/fundo.UPABJDOMCAMPELO.jpg" class="hover-effect" width="400" height="345" ></div></a>  </div> 
+        
+                <div class="image-container"><a href="setembroamarelo.html"><div class="logo1"><img src="imagens/setembro amarelo.png" class="hover-effect" width="270" height="345"></div></a>  </div> 
+            
+                <div class="image-container"><a href="aniversariantesdomes.html"><div class="logo2"><img src="imagens/Aniversariantes de Setembro.jpg"  class="hover-effect" width="270" ></div></a>  </div> 
+                 
+          
+         </div>
+    
+</body>
+
+
+</html>

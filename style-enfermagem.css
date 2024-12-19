@@ -1,0 +1,239 @@
+/* Estilos Gerais */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    color: #000000;
+    overflow-x: hidden; /* Evita rolagem horizontal */
+  }
+  
+  /* Cabeçalho */
+  header {
+    background-color: #be1e12;
+    color: white;
+    padding: 10px; /* Espaçamento no cabeçalho */
+    display: flex;
+    align-items: center; /* Alinha verticalmente */
+    justify-content: flex-start; /* Posiciona à esquerda */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+  }
+  
+  /* Contêiner do Cabeçalho */
+  .header-container {
+    display: flex;
+    align-items: center;
+    gap: 15px; /* Espaço entre a imagem e o texto */
+  }
+  
+  /* Imagem no Cabeçalho */
+  .header-logo {
+    max-height: 50px; /* Define altura máxima */
+    width: auto; /* Mantém a proporção */
+  }
+  
+  /* Texto do Cabeçalho */
+  .header-title {
+    font-size: 1.5rem; /* Tamanho do texto */
+    margin: 0; /* Remove margens extras */
+  }
+  
+  
+  /* Menu de Navegação Fixo na Lateral Esquerda */
+  nav {
+    background: rgb(179, 10, 10);
+    color: rgb(255, 255, 255);
+    position: fixed;
+    top: 4rem; /* Altura do cabeçalho */
+    width: 250px;
+    height: calc(100vh - 4rem); /* Ajusta a altura dinâmica */
+    
+  }
+  
+  nav ul {
+    list-style-type: none;
+    padding: 20px;
+  }
+  
+  nav ul li {
+    margin: 1rem 0;
+  }
+  
+  nav ul li a {
+    font-weight: bold; /* Deixar o texto em negrito */
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    display: block;
+  }
+  
+  nav ul li a:hover {
+    background-color: #c53a10;
+  }
+  
+  /* Conteúdo Principal */
+  main {
+    margin-left: 250px; /* Alinhado à direita do menu */
+    padding: 2rem;
+    padding-top: 6rem; /* Espaço para o cabeçalho */
+    background: linear-gradient(to bottom, rgb(255, 255, 255) 20%, rgb(173, 7, 7) 70%);
+    min-height: 100vh; /* Para ocupar a tela inteira */
+  }
+  
+  /* Botão Interativo */
+  button.interactive-button {
+    padding: 0.75rem 1.5rem;
+    background-color: #1b2aac;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  /* Responsividade */
+  @media (max-width: 768px) {
+    nav {
+      width: 100%;
+      height: auto;
+      position: relative;
+      top: 0;
+    }
+  
+    nav ul {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 10px;
+    }
+  
+    nav ul li {
+      flex: 1 1 50%;
+      margin: 0.5rem;
+    }
+  
+    main {
+      margin-left: 0;
+      padding: 1rem;
+    }
+  }
+  
+  /* Estilo do Quadrado Branco */
+  .quadrado-branco {
+    width: 70%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: white;
+    border: 8px solid rgba(0, 0, 0, 0.966);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-radius: 20px;
+    height: auto;
+  }
+
+  .quadrado-branco video {
+    margin: 0 auto; /* Centraliza o vídeo dentro do container */
+  }
+  
+  
+  .item {
+    
+   text-align: center;  
+  
+  }
+ 
+  .item video {
+
+    
+    align-items: center;
+    
+
+  }
+  
+  .texto-correspondente {
+    flex-grow: 1;
+  }
+  
+  .texto-correspondente h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: #333;
+  }
+  
+  .texto-correspondente p {
+    margin: 0.5rem 0 0 0;
+    color: #666;
+  }
+
+
+  /* Dropdown */
+  .dropdown-title {
+    cursor: pointer;
+    padding: 5px;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    transition: color 0.5s ease;
+  }
+  
+  .dropdown-title:hover {
+    color: #fa920993;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 160px;
+    max-width: 90vw; /* Limita a largura em telas menores */
+    max-height: 300px;
+    overflow-y: auto;
+    box-shadow: 0px 8px 16px rgba(97, 2, 2, 0.781);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #ffffff;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /* Destaque */
+  .highlight {
+    font-weight: bold;
+    font-size: 14px;
+    color: #ff0000;
+    text-decoration: underline;
+    transition: color 0.3s;
+  }
+  
+  .highlight:hover {
+    color: #b82512;
+  }
+
+  .countdown {
+
+   align-items:end;
+
+  }
+  
+
+  .header-container {
+    display: flex;
+    align-items: center;
+
+  }

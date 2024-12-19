@@ -1,0 +1,221 @@
+/* Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: linear-gradient(to bottom, rgb(255, 255, 255) 30%, rgb(154, 7, 173) 70%);
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+/* Container principal */
+.container {
+  padding: 14px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap; /* Permite que os itens fiquem em linha, sem quebra */
+  overflow-x: auto; /* Permitir rolagem horizontal no container */
+  scroll-snap-type: x mandatory; /* Adiciona um efeito de snap para rolagem suave */
+}
+
+
+/* Header e menu */
+header {
+  background-color: #c7099e;
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.menu nav a {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  margin-right: 20px;
+  font-size: 18px;
+  white-space: nowrap;
+}
+
+.menu ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+/* Estilo do quadrado branco */
+.quadrado-branco {
+  width: 90%;
+  max-width: 1080px;
+  background-color: white;
+  border: 8px solid rgba(0, 0, 0, 0.966);
+  margin: 20px auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+/* Estilo das imagens */
+img {
+  max-width: 100%; /* Garante que as imagens nunca ultrapassem a largura do container pai */
+  height: auto; /* Mantém a proporção da imagem */
+  display: block;
+  margin: 10px 0;
+}
+
+/* Containers para imagens verticais e horizontais */
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Estilo geral do dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+/* Título do dropdown */
+.dropdown-title {
+  cursor: pointer;
+  padding: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+  transition: color 0.5s ease;
+}
+
+/* Estilo do conteúdo do dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #b30ec2;
+  min-width: 160px;
+  max-width: 90vw;
+  border-radius: 8px;
+  box-shadow: 0px 8px 16px rgba(163, 0, 228, 0.781);
+  z-index: 1;
+}
+
+/* Estilo dos links dentro do dropdown */
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Estilo ao passar o mouse nos links */
+.dropdown-content a:hover {
+  background-color: #9811b3;
+}
+
+/* Exibir apenas o dropdown do "Menu" quando o mouse estiver sobre ele */
+.menu .dropdown:hover > .dropdown-content {
+  display: block;
+}
+
+
+
+.highlight {
+  font-weight: bold; /* Deixar o texto em negrito */
+  font-size: 14px; /* Aumentar o tamanho da fonte */
+  color: #ff0000; /* Mudar a cor do texto para vermelho */
+  text-decoration: underline; /* Adicionar sublinhado */
+  transition: color 0.3s; /* Transição suave para a cor */
+}
+
+.highlight:hover {
+  color: #ff4d4d; /* Cor ao passar o mouse */
+}
+  
+/* Media queries para telas pequenas */
+@media (max-width: 1080px) {
+  .container {
+      width: 100%;
+      padding: 10px;
+      flex-direction: column;
+      align-items: flex-start; /* Alinha o conteúdo à esquerda */
+  }
+
+  /* Ajustando o header e o menu para caber em telas pequenas */
+  header {
+      height: auto;
+      padding: 10px;
+  }
+
+  .menu {
+      flex-direction: column;
+      align-items: flex-start; /* Alinha o menu à esquerda */
+  }
+
+  .menu nav {
+      display: flex;
+      flex-direction: column; /* Exibe os itens em coluna */
+      width: 100%;
+  }
+
+  .menu nav a {
+      font-size: 16px; /* Ajusta o tamanho da fonte */
+      padding: 8px; /* Ajusta o espaçamento */
+      display: block; /* Mostra os links em blocos */
+      width: 100%; /* Ocupa a largura total */
+  }
+
+  /* Ajustando o dropdown para dispositivos móveis */
+  .dropdown-content {
+      left: 0;
+      transform: none;
+      min-width: 100%;
+      max-width: 100%;
+  }
+
+  /* Especificamente para garantir a ordem correta: itens sem dropdown primeiro */
+  .menu nav a:not(.dropdown-title) {
+      order: 1; /* Prioridade mais alta */
+  }
+
+  /* Depois, os itens com dropdown */
+  .menu .dropdown {
+      order: 2; /* Prioridade mais baixa */
+  }
+
+  /* Estilo para expandir o dropdown */
+  .dropdown-content {
+      display: none;
+      position: relative;
+      background-color: #b30ec2;
+      border-radius: 8px;
+      width: 100%;
+      box-shadow: 0px 8px 16px rgba(163, 0, 228, 0.781);
+      z-index: 1;
+  }
+
+  /* Exibir dropdown ao clicar/tocar em dispositivos móveis */
+  .dropdown-title:hover + .dropdown-content,
+  .dropdown-title:focus + .dropdown-content {
+      display: block;
+  }
+}
+

@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    padding: 14px;
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header {
+    background-color: #c7099e;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    margin: 0 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.menu nav a {
+    color: rgb(224, 229, 236);
+    text-decoration: none;
+    display: center;
+    margin-right: 20px;
+    font-size: 18px;
+    white-space: nowrap;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+html, body {
+    margin: 0; /* Remove qualquer margem padrão */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    background: linear-gradient(to bottom, rgb(255, 255, 255)30%, rgb(154, 7, 173) 70%);;
+    padding: 0;
+    max-width: 1920px; /* Limita a largura máxima da página */
+    overflow-x: hidden; /* Evita rolagem horizontal */
+}
+
+ 
+ .quadrado-branco{
+ 
+     width: 1290px; /* Largura do quadrado */
+     height: 580px; /* Altura do quadrado */
+     background-color: white; /* Cor de fundo do quadrado */
+     border: 8px solid rgba(0, 0, 0, 0.966); /* Opcional: borda para o quadrado */
+     margin-right: auto;
+     margin-left: auto; 
+     margin: auto;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+ 
+ .quadrado-branco img {
+     width: 500px; /* Deixa a largura das imagens internas no tamanho original */
+     max-width: 250%; /* Isso garante que não ultrapassem o tamanho do contêiner */
+     height: 300px; /* Mantém a proporção das imagens */
+ 
+    
+   }
+ 
+ .MURALDEAVISOS{
+     
+     
+     margin-TOP: 50px;
+     font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ 
+ }
+ 
+ .logo1,.logo2,.logo3 {
+         
+        
+         margin-top: 110px; /* Mover a imagem 20px para baixo */
+         float: left; /* Alinha as imagens à esquerda */
+         margin-right: 240px; /* Espaçamento entre as imagens */
+         margin-left: 155px;
+         max-width: 120px; /* Limita a largura das imagens */
+         
+     
+ 
+        
+ }
+ 
+ .logo1{
+     
+     margin-top: 140px;
+     margin-right: 100px;
+     margin-left: 50px;
+ }
+ 
+ .logo2{
+ 
+     height: 10%;
+     margin-top: 138px;
+     margin-left: 480px;
+ 
+ }
+ 
+ .logo3{
+ 
+     margin-top: 142px;
+     margin-right: 260px;
+     margin-left: 50px;
+ }
+ 
+ .image-container {
+ 
+     height: 1px;
+     display: flex;
+     overflow:inherit;
+     background-color: transparent; /* cor inicial */
+     transition: background-color 0.2s;
+ }
+ 
+ .hover-effect {
+     transition: transform 0.4s;
+ }
+ 
+ .image-container:hover .hover-effect {
+     transform: scale(1.1); /* aumenta a imagem */
+ }
+ 
+ 
+ .logo{
+     width: 100%; /* Tamanho padrão */
+     max-width: 1920px; /* Largura máxima */
+ }
+ 
+ img {
+     width: 100%;
+     max-width: 1920px;
+     height: auto;
+   }
+ 
+ @media (min-width: 1366%) {
+     
+     .logo{
+         width: auto; /* Ajusta a largura quando abaixo de 1366px */
+     }
+ 
+ 
+ }
+ 
+ 

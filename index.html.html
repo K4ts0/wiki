@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Principal </title>
+  <link rel="stylesheet" href="style-principal.css">
+  <style>
+    /* Adicionando estilo para redirecionar o dropdown e adicionar rolagem */
+    .dropdown {
+      position: relative;
+      display: inline-block;
+    }
+
+    .dropdown-content {
+      display: none;
+      position: absolute;
+      left: 100%; /* Faz o dropdown aparecer à direita */
+      top: 0;
+      background-color: #f9f9f9;
+      min-width: 160px;
+      max-height: 200px; /* Limita a altura máxima para exibir a rolagem */
+      overflow-y: auto;  /* Habilita a rolagem vertical */
+      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+      z-index: 1;
+    }
+
+    .dropdown-content a {
+      color: black;
+      padding: 12px 16px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .dropdown-content a:hover {
+      background-color: #f1f1f1;
+    }
+
+    .dropdown:hover .dropdown-content {
+      display: block; /* Exibe o dropdown ao passar o mouse */
+    }
+
+    .dropdown-title {
+      cursor: pointer;
+    }
+    .header-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+      
+    }
+
+    .header-logo {
+      height: 80px;
+    }
+
+    .header-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin: 0;
+      color: white;
+    }
+
+    .header-center {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-align: center;
+    }
+
+    .header-center h2 {
+      margin: 0;
+      font-size: 18px;
+      color: white;
+    }
+
+    .header-center h1 {
+      margin: 0;
+      font-size: 24px;
+      color: rgb(255, 251, 0);
+    }
+
+    #countdown {
+      font-size: 20px;
+      font-weight: bold;
+      color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-container">
+      <img src="imagens/DezembroVermelho/LOGO.png" alt="Logo" class="header-logo">
+      <h1 class="header-title">WIKI UPA BJ ﾠ|</h1>
+
+      <div class="header-center">
+        <h2>Faltam</h2>
+        <div id="countdown">Carregando...</div>
+        <h2>Para</h2>
+        <h1>2025</h1>
+      </div>
+    </div>
+    <script src="countdown.js"></script>
+  </header>
+  
+  <div class="container">
+    <nav>
+      <ul>
+        <li><a href="principal.html">Home</a></li>
+        <li><a href="domcampelo.html">Dom Campelo</a></li>
+        <li><a href="informativos.html">Informativos</a></li>
+        
+        <!-- Adicionando o dropdown de Ramais com rolagem -->
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Ramais &#x25BC;</span></a>
+          <div class="dropdown-content">
+             <a href="#">Administração - 3184-4516</a>
+                            <a href="#">Almoxarifado - 3184-4512</a>
+                            <a href="#">Classificação 04 - 3184-4497</a></a>
+                            <a href="#">Classificação 05 - 3184-4498</a>
+                            <a href="#">Consultório 01 - 3184-4503</a>
+                            <a href="#">Consultório 04 - 3184-4513</a>
+                            <a href="#">Consultório 05 - 3184-4514</a>
+                            <a href="#">Consultório  06 - 3184-4494</a>
+                            <a href="#">Coordenação Geral - 3184-4493</a>
+                            <a href="#">Coleta - 3184-4505</a>
+                            <a href="#">CPD/TI - 3184-4515</a>
+                            <a href="#">Farmácia - 3184-4506</a>
+                            <a href="#">Nutrição - 3184-4511</a>
+                            <a href="#">Raio X - 3184-4507</a>
+                            <a href="#">Recepção - 3184-4495</a>
+                            <a href="#">RH - 3184-4501</a>
+                            <a href="#">Sala Amarela Adulto - 3184-4509</a>
+                            <a href="#">Sala Amarela Pediátrica - 3184-4508</a>
+                            <a href="#">Sala Vermelha - 3184-4510</a>
+                            <a href="#">Serviço Social - 3184-4496</a>
+          </div>
+        </li>
+
+        <!-- Adicionando o dropdown de Educação / CCIH -->
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Educação / CCIH &#x25BC;</span></a>
+          <div class="dropdown-content">
+
+            <a href="dezembrvermelho.html">Dezembro 2024</a>
+            <a href="novembroazul.html">Novembro 2024</a>
+            <a href="outubrorosa.html">Outubro 2024</a>
+            <a href="CCIHsetembro.html">Setembro 2024</a>
+          </div>
+        </li>
+
+        <li><a href="https://ismep.org.br">ISMEP</a></li>
+        <li><a href="https://docs.google.com/forms/d/e/1FAIpQLSck4DnA9SVSc9XCpupuNX4Kdcxcds8IXLr3j3pGTvcg0HlZWg/viewform">Central de Denúncias</a></li>
+        <li><a href="https://classroom.google.com/c/Njg2OTcyNzc0OTUw?cjc=rzfd4lq">Treinamento CCIH</a></li>
+        
+        <li class="dropdown">
+          <a href="#"><span class="dropdown-title">Tutoriais &#x25BC;</span></a>
+          <div class="dropdown-content">
+
+            <a href="enfermagem.html">Enfermagem</a>
+           
+          </div>
+
+      </ul>
+
+      
+    </nav>
+
+    <main>
+      <h2>Bem-vindo(a) a WIKI UPA BARRA DE JANGADA</h2>
+      <p>Aqui estão todas as últimas Informações.</p>
+
+      <div class="quadrado-branco">
+        
+        <div class="item">
+
+          <a href="dezembrvermelho.html">
+            <img src="imagens/DezembroVermelho/confra.png"  class="hover-effect" alt="Imagem Aniversariantes" width="400" height="345"></a>
+        
+            <div class="texto-correspondente">
+                <h3>Nossa Confraternização!</h3>
+                <p>Vamos celebrar juntos mais um ano de conquistas e união!.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+
+            <a href="domcampelo.html">
+            <img src="imagens/livro Dom Campelo.jpeg" class="hover-effect" alt="Imagem Livro Dom Campelo" width="270" height="345"></a>
+            <div class="texto-correspondente">
+                <h3>Dom Campelo</h3>
+                <p>Descubra mais sobre o projeto "Dom Campelo" e participe desta iniciativa.</p>
+            </div>
+        </div>
+    
+        <div class="item">
+
+            <a href="aniversariantesdomes.html">
+            <img src="imagens/DezembroVermelho/Aniversariantes (1).jpeg" class="hover-effect" alt="Novembro Azul" width="270"></a>
+            <div class="texto-correspondente">
+              <h3>Aniversariantes De Dezembro</h3>
+              <p>Confira os aniversariantes do mês de Dezembro e celebre conosco!</p>
+                
+              </div>
+            </div>
+          </div>
+         
+        </div>
+      
+      
+      
+      </div>
+
+
+      
+    </main>
+  </div>
+
+  
+
+
+</body>
+</html>
